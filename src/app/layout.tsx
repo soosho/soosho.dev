@@ -32,6 +32,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "CshsylictYm1g1bLE3BXp-hlfaTGQLxA9vUBjbjjOgE",
+    other: {
+      "google-adsense-account": "ca-pub-3060302300389997",
+    },
   },
   openGraph: {
     title: "Soosho | Digital Architect & Full-Stack Engineer",
