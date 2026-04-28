@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Plus_Jakarta_Sans, Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -75,6 +76,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3060302300389997"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={`${spaceGrotesk.variable} ${plusJakarta.variable} ${outfit.variable}`}>
         <ClickSpark
           sparkColor='#a855f7'
