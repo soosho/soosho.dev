@@ -27,7 +27,7 @@ const SKILL_GROUPS = [
 
 export default function Skills() {
   return (
-    <section className="section-container" style={{ padding: '8rem 2rem' }}>
+    <section className="section-container" id="skills">
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: '6rem' }}>
           <motion.span 
@@ -45,7 +45,7 @@ export default function Skills() {
 
         <div style={{ 
           display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
           gap: '3rem' 
         }}>
           {SKILL_GROUPS.map((group, groupIndex) => (

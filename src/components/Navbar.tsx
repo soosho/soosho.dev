@@ -14,15 +14,17 @@ export default function Navbar() {
       style={{
         position: 'fixed',
         top: '1.5rem',
-        right: '2rem',
-        left: 'auto',
-        transform: 'none',
-        width: 'max-content',
-        padding: '0.75rem 2rem',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        width: 'calc(100% - 2rem)',
+        maxWidth: 'max-content',
+        padding: '0.75rem 1.5rem',
         zIndex: 1000,
         display: 'flex',
-        gap: '2rem',
-        alignItems: 'center'
+        gap: '1.5rem',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        whiteSpace: 'nowrap'
       }}
     >
       <Link href="/" style={{ fontWeight: 700, fontSize: '1.25rem', fontFamily: 'var(--font-logo)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
@@ -44,11 +46,11 @@ export default function Navbar() {
           <span style={{ color: 'var(--accent)' }}>.</span>
         </div>
       </Link>
-      <div style={{ display: 'flex', gap: '1.5rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+      <div className="nav-links">
         <motion.div whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>
           <Link href="/#work">Work</Link>
         </motion.div>
-        <motion.div whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>
+        <motion.div className="nav-hide-mobile" whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>
           <Link href="/#about">About</Link>
         </motion.div>
         <motion.div whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>

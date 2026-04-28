@@ -13,9 +13,9 @@ export default function ContactCTA() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        className="contact-card"
         style={{ 
           position: 'relative', 
-          padding: '4rem 5rem', 
           borderRadius: '32px', 
           background: 'linear-gradient(90deg, rgba(168, 85, 247, 0.1) 0%, rgba(0,0,0,0.6) 100%)',
           border: '1px solid rgba(168, 85, 247, 0.15)',
@@ -85,7 +85,7 @@ export default function ContactCTA() {
             <FaGithub size={32} />
           </a>
 
-          <LaunchButton text="Start a Conversation" href="mailto:hello@soosho.dev" />
+          <LaunchButton text="Let's Talk" href="mailto:hello@soosho.dev" />
         </div>
       </motion.div>
     </section>

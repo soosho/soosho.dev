@@ -15,19 +15,14 @@ export default function Footer() {
     <footer style={{ 
       background: '#000', 
       borderTop: '1px solid rgba(255,255,255,0.1)',
-      padding: '10rem 2rem 5rem',
+      padding: '8rem 1.5rem 4rem',
       position: 'relative',
       zIndex: 10
     }}>
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
-          gap: '6rem',
-          marginBottom: '8rem'
-        }}>
+        <div className="footer-grid">
           {/* Brand Column */}
-          <div style={{ gridColumn: 'span 2' }}>
+          <div className="footer-brand">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '2rem' }}>
               <motion.img 
                 src="/logo.png" 
@@ -86,7 +81,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div style={{ 
+        <div className="footer-bottom" style={{ 
           display: 'flex', 
           justifyContent: 'space-between', 
           alignItems: 'center', 
