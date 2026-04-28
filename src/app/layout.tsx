@@ -21,12 +21,16 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://soosho.dev'),
   title: "Soosho | Digital Architect & Full-Stack Engineer",
   description: "Boutique digital craftsmanship for solo entrepreneurs and corporations. Architecting high-performance blockchain ecosystems and scalable web systems since 2015.",
   keywords: ["Soosho", "Digital Architect", "Full-Stack Engineer", "Blockchain Consensus", "Next.js", "Revenue Sharing Models", "Web3 Infrastructure"],
   authors: [{ name: "Soosho" }],
   icons: {
     icon: "/logo.png",
+  },
+  verification: {
+    google: "CshsylictYm1g1bLE3BXp-hlfaTGQLxA9vUBjbjjOgE",
   },
   openGraph: {
     title: "Soosho | Digital Architect & Full-Stack Engineer",
