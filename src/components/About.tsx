@@ -50,7 +50,7 @@ const PILLARS = [
 
 export default function About() {
   return (
-    <section id="about" className="section-container" style={{ padding: '8rem 2rem' }}>
+    <section id="about" className="section-container">
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
         {/* Header Section */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', marginBottom: '10rem', alignItems: 'start' }}>
@@ -120,12 +120,7 @@ export default function About() {
         </div>
 
         {/* Pillars Grid */}
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          borderTop: '1px solid rgba(255,255,255,0.1)',
-          borderLeft: '1px solid rgba(255,255,255,0.1)'
-        }}>
+        <div className="pillars-grid">
           {PILLARS.map((pillar, index) => (
             <motion.div 
               key={index}
@@ -196,9 +191,8 @@ export default function About() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
+          className="bio-card"
           style={{ 
-            marginTop: '10rem', 
-            padding: '6rem', 
             borderRadius: '40px',
             background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%)',
             border: '1px solid rgba(255, 255, 255, 0.05)',
@@ -210,7 +204,7 @@ export default function About() {
             <h4 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '3rem', letterSpacing: '-0.03em' }}>
               The <span style={{ color: 'var(--accent)' }}>Unified Skill Set.</span>
             </h4>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem' }}>
+            <div className="bio-grid">
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.9, fontSize: '1.1rem' }}>
                 I operate beyond traditional development roles by combining software engineering, infrastructure deployment, 
                 UI/UX execution, and technical strategy into a unified skill set. Whether architecting complex backend systems, 
@@ -228,26 +222,28 @@ export default function About() {
             marginTop: '6rem', 
             display: 'flex', 
             flexWrap: 'wrap', 
-            gap: '3rem', 
-            opacity: 0.3,
-            fontSize: '0.8rem',
-            fontWeight: 700,
-            letterSpacing: '0.3em',
-            textTransform: 'uppercase'
+            gap: '0.75rem', 
+            opacity: 0.6
           }}>
-            <span>Golang</span>
-            <span>Python</span>
-            <span>PHP</span>
-            <span>Laravel</span>
-            <span>Docker</span>
-            <span>PostgreSQL</span>
-            <span>MySQL</span>
-            <span>C / C++</span>
-            <span>C#</span>
-            <span>JavaScript</span>
-            <span>TypeScript</span>
-            <span>Blockchain</span>
-            <span>Linux Architecture</span>
+            {[
+              'Golang', 'Python', 'PHP', 'Laravel', 'Docker', 'PostgreSQL', 
+              'MySQL', 'C / C++', 'C#', 'JavaScript', 'TypeScript', 
+              'Blockchain', 'Linux Architecture'
+            ].map((tech) => (
+              <span key={tech} style={{
+                fontSize: '0.7rem',
+                fontWeight: 700,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                padding: '0.4rem 0.8rem',
+                borderRadius: '6px',
+                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid rgba(255,255,255,0.05)',
+                color: 'var(--text-muted)'
+              }}>
+                {tech}
+              </span>
+            ))}
           </div>
         </motion.div>
       </div>

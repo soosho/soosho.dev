@@ -10,20 +10,15 @@ export default function Navbar() {
     <motion.nav 
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="glass"
+      className="glass navbar-container"
       style={{
         position: 'fixed',
-        top: '1.5rem',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        width: 'calc(100% - 2rem)',
-        maxWidth: 'max-content',
-        padding: '0.75rem 1.5rem',
+        top: '1rem',
         zIndex: 1000,
         display: 'flex',
-        gap: '1.5rem',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        padding: '0.6rem 1.25rem',
+        gap: '1rem',
         whiteSpace: 'nowrap'
       }}
     >
