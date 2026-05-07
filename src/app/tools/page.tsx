@@ -35,6 +35,20 @@ const TOOLS = [
     icon: <Calculator size={24} />,
     path: '/tools/unit-converter',
     status: 'Live'
+  },
+  {
+    name: 'BIP39 Mnemonic Generator',
+    description: 'Generate secure 12 or 24-word recovery phrases client-side for testing cryptocurrency wallet integrations.',
+    icon: <Terminal size={24} />,
+    path: '/tools/mnemonic-generator',
+    status: 'Live'
+  },
+  {
+    name: 'SHA-256 Hash Calculator',
+    description: 'Instantly calculate SHA-256 hashes using the Web Crypto API for data integrity and Bitcoin block header analysis.',
+    icon: <Activity size={24} />,
+    path: '/tools/sha256',
+    status: 'Live'
   }
 ];
 
