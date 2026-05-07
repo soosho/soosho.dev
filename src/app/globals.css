@@ -87,6 +87,14 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
+.interactive-card {
+  transition: all 0.3s ease;
+}
+.interactive-card:hover {
+  border-color: var(--accent) !important;
+  transform: translateY(-2px);
+}
+
 .section-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -225,4 +233,49 @@ button {
   .pillars-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
+}
+
+/* Blog Content Utilities */
+.blog-content h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.blog-content ul, 
+.blog-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-content code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: var(--accent);
+}
+
+.blog-content strong {
+  color: #fff;
 }

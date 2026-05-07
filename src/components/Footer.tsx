@@ -52,15 +52,58 @@ export default function Footer() {
           <div>
             <h4 style={{ color: '#fff', fontSize: '1rem', fontWeight: 700, marginBottom: '2rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Navigation</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              {['Work', 'About', 'Expertise', 'Contact'].map((item) => (
+              {['Work', 'About', 'Shop', 'Contact'].map((item) => (
                 <a 
                   key={item} 
-                  href={`/#${item.toLowerCase()}`} 
+                  href={`/${item.toLowerCase() === 'work' ? '#work' : item.toLowerCase()}`} 
                   style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', transition: 'color 0.3s' }}
                   onMouseEnter={(e) => e.currentTarget.style.color = '#fff'}
                   onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.6)'}
                 >
                   {item}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Resources Column */}
+          <div>
+            <h4 style={{ color: '#fff', fontSize: '1rem', fontWeight: 700, marginBottom: '2rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Resources</h4>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {[
+                { name: 'Developer Tools', path: '/tools' },
+                { name: 'Ultimate Guides', path: '/guides' },
+                { name: 'Technical Blog', path: '/blog' }
+              ].map((item) => (
+                <a 
+                  key={item.name} 
+                  href={item.path} 
+                  style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', transition: 'color 0.3s' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#fff'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.6)'}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Legal Column */}
+          <div>
+            <h4 style={{ color: '#fff', fontSize: '1rem', fontWeight: 700, marginBottom: '2rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Legal</h4>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {[
+                { name: 'Privacy Policy', path: '/privacy-policy' },
+                { name: 'Terms of Service', path: '/terms' }
+              ].map((item) => (
+                <a 
+                  key={item.name} 
+                  href={item.path} 
+                  style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', transition: 'color 0.3s' }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = '#fff'}
+                  onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.6)'}
+                >
+                  {item.name}
                 </a>
               ))}
             </div>

@@ -45,8 +45,17 @@ export default function Navbar() {
         <motion.div whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>
           <Link href="/#work">Work</Link>
         </motion.div>
+        <motion.div whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>
+          <Link href="/tools">Tools</Link>
+        </motion.div>
+        <motion.div whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>
+          <Link href="/guides">Guides</Link>
+        </motion.div>
         <motion.div className="nav-hide-mobile" whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>
-          <Link href="/#about">About</Link>
+          <Link href="/about">About</Link>
+        </motion.div>
+        <motion.div whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>
+          <Link href="/blog">Blog</Link>
         </motion.div>
         <motion.div whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>
           <Link href="/story">Story</Link>
@@ -55,7 +64,7 @@ export default function Navbar() {
           <Link href="/shop">Shop</Link>
         </motion.div>
         <motion.div whileHover={{ color: '#fff' }} transition={{ duration: 0.2 }}>
-          <Link href="/#contact">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </motion.div>
       </div>
     </motion.nav>
