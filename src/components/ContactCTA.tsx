@@ -85,7 +85,7 @@ export default function ContactCTA() {
             <FaGithub size={32} />
           </a>
 
-          <LaunchButton text="Let's Talk" href="mailto:hello@soosho.dev" />
+          <LaunchButton text="Let's Talk" href="mailto:soosho@proton.me" />
         </div>
       </motion.div>
     </section>
