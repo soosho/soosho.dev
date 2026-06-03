@@ -199,7 +199,7 @@ export default function ShopPage() {
                 </div>
 
                 <div style={{ marginTop: 'auto', paddingTop: '1.5rem', display: 'flex', gap: '1rem' }}>
-                  <LaunchButton text={asset.cta} href="https://t.me/Sooxu_O" />
+                  <LaunchButton text={asset.cta} href="https://t.me/soosho_dev" />
                   {asset.link && (
                     <a 
                       href={asset.link} 
