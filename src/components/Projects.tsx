@@ -49,6 +49,16 @@ const PROJECTS = [
     link: 'https://github.com/soosho/miningcore.ui'
   },
   {
+    title: 'Miningcore Community Edition (MCCE)',
+    category: 'Protocol & Core Fork',
+    images: [
+      '/img/miningcore/logo.png',
+    ],
+    description: 'A modernized, actively maintained revival of Miningcore — abandoned since 2022. Upgraded to .NET 8 and Ubuntu 24.04 with config hot-reload for zero-downtime pool management, a built-in admin dashboard, stratum connection hardening against DDoS, Newtonsoft JSON fallback for non-standard miners, and merged mining support. The only actively maintained Miningcore fork.',
+    tech: ['.NET 8', 'C#', 'PostgreSQL', 'Docker', 'Ubuntu 24.04'],
+    link: 'https://github.com/soosho/miningcore'
+  },
+  {
     title: 'Revenue Sharing Models',
     category: 'SaaS Architecture',
     images: [
