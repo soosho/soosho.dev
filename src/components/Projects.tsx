@@ -6,6 +6,16 @@ import ProjectImageSlider from './ProjectImageSlider';
 
 const PROJECTS = [
   {
+    title: 'PeerScript API (Soosho)',
+    category: 'Blockchain API',
+    images: [
+      '/img/peerscript/docs.png',
+    ],
+    description: 'A production REST API for reading and writing P2TH inscriptions on the Peercoin blockchain. Features UTXO splitting, batch payload submission with catch/resolve workflow, fee estimation, and mempool tracking — all documented with an interactive OpenAPI 3.1 spec.',
+    tech: ['Node.js', 'OpenAPI 3.1', 'Peercoin', 'P2TH', 'REST'],
+    link: 'https://soosho.peerscript.com'
+  },
+  {
     title: 'Bitmern Mining Pool',
     category: 'Infrastructure',
     images: [
